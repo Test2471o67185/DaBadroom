@@ -1,0 +1,140 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Da Badrooms", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+--TABS--
+local MainTab = Window:MakeTab({
+	Name = "Main",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local SwordTab = Window:MakeTab({
+	Name = "Collect Swords",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local LevelsTab = Window:MakeTab({
+	Name = "Exit Level",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local MiscTab = Window:MakeTab({
+	Name = "Misc",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+---Main---
+
+---coming soon---
+
+
+
+
+---SWORDS---
+SwordTab:AddButton({
+	Name = "Holy Sword (Lvl 790)",
+	Callback = function()
+		fireclickdetector(game:GetService("Workspace").SwordInStone.ClickDetector)
+  	end    
+})
+
+SwordTab:AddButton({
+	Name = "Hell Sword (Lvl 69)",
+	Callback = function()
+		fireclickdetector(game:GetService("Workspace").SwordInStone.ClickDetector)
+  	end    
+})
+
+SwordTab:AddButton({
+	Name = "Glizzy Sword (Crimson Forest)",
+	Callback = function()
+		fireclickdetector(game:GetService("Workspace").GlizzyRock.SwordInStone.ClickDetector)
+  	end    
+})
+
+---EXIT LEVELS---
+
+LevelsTab:AddButton({
+	Name = "Level 0",
+	Callback = function()
+		fireclickdetector(game:GetService("Workspace").ExitDoor.Main.Part.ClickDetector)
+  	end    
+})
+
+
+
+
+
+
+
+
+
+LevelsTab:AddButton({
+	Name = "Crimson Forest (Lvl 1)",
+	Callback = function()
+		fireclickdetector(game:GetService("Workspace")["Mossy Door"].ClickDetector)
+  	end    
+})
+
+
+
+
+
+--BUTTONS MISC---
+MiscTab:AddButton({
+	Name = "Key 1 (Lvl 1)",
+	Callback = function()
+		fireclickdetector(game:GetService("Workspace")["Key 1"].Main.ClickDetector)
+  	end    
+})
+MiscTab:AddButton({
+	Name = "Key 2 (Lvl 2)",
+	Callback = function()
+        
+  	end    
+})
+MiscTab:AddButton({
+	Name = "Key 3 (Lvl !)",
+	Callback = function()
+		
+  	end    
+})
+MiscTab:AddButton({
+	Name = "Key 4 (The End)",
+	Callback = function()
+		fireclickdetector(game:GetService("Workspace")["Key 4"].Main.ClickDetector)
+  	end    
+})
+MiscTab:AddButton({
+	Name = "Note 1 (Lvl 1)",
+	Callback = function()
+		fireclickdetector(game:GetService("Workspace").Note.ClickDetector)
+  	end    
+})
+MiscTab:AddButton({
+	Name = "Note 2 (Lvl 0)",
+	Callback = function()
+		fireclickdetector(game:GetService("Workspace").Note.ClickDetector)
+  	end    
+})
+MiscTab:AddButton({
+	Name = "Note 3 (Lvl 790)",
+	Callback = function()
+		fireclickdetector(game:GetService("Workspace").Note.ClickDetector)
+  	end    
+})
+MiscTab:AddButton({
+	Name = "Note 4 (The End)",
+	Callback = function()
+		fireclickdetector(game:GetService("Workspace").Note.ClickDetector)
+  	end    
+})
+MiscTab:AddButton({
+	Name = "Note 5 (The Hub)",
+	Callback = function()
+		fireclickdetector(game:GetService("Workspace").Note.ClickDetector)
+  	end    
+})
